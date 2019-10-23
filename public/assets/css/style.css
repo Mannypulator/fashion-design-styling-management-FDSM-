@@ -1,0 +1,439 @@
+:root {
+    --gugi: 'Gugi', cursive;
+    --swash: 'Macondo Swash Caps', cursive;
+    --stylish: 'Stylish', sans-serif;
+
+
+
+    --black: #181818;
+    --orange: #e8491d;
+    --white: #f2f2f2;
+    --grey: #cccccc;
+    --overlay: rgba(0, 0, 0, 0, 0.7);
+
+}
+
+body {
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+   
+}
+
+
+#newsletter {
+    background-color: #f4f4f4;
+
+}
+
+/* Global */
+/* #outer{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+} */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#overlay {
+    height: 10;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9)
+}
+
+
+
+.button-1 {
+    text-shadow: -1px -1px 1px rgb(102, 36, 12),
+        0px 4px 1px rgba(0, 0, 0, 0.5),
+        4px 4px 5px rgba(0, 0, 0, 0.7),
+        0px 0px 7px rgba(0, 0, 0, 0.4);
+    font-weight: bolder;
+    height: 50px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #e8491d;
+    border-radius: 3px;
+    width: 200px;
+    margin-top: 40px;
+    display: inline-block;
+    padding: 10px 14px;
+    /* color: #FFF; */
+    border: 1px solid #FFF;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 120%;
+    background-color: rgba(255, 255, 255, 0.2);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-transition: background-color 300ms ease;
+    -moz-transition: background-color 300ms ease;
+    transition: background-color 300ms ease;
+    cursor: pointer;
+}
+
+.button-1:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #FFF;
+}
+
+
+/* Header */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 40px;
+    min-height: 40px;
+    width: 100%;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    /* border-bottom: grey solid 0.1px */
+
+}
+
+header .logo {
+    width: 80px;
+    height: inherit;
+    float: left
+}
+
+header a {
+    color: #ffffff;
+    font-size: 15px;
+    text-decoration: none;
+    /* font-weight: bold; */
+}
+
+header li {
+    
+    display: inline;
+    padding: 0 20px 0 20px
+}
+
+header #branding {
+    opacity: 0.9;
+    float: left;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+}
+
+#branding img {
+    height: 40px;
+    width: 50px;
+
+}
+
+header #branding h1 {
+    margin: 0;
+    text-transform: lowercase;
+    text-shadow: -1px -1px 1px rgb(102, 36, 12),
+        0px 4px 1px rgba(0, 0, 0, 0.5),
+        4px 4px 5px rgba(0, 0, 0, 0.7),
+        0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+.highlight,
+header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #e8491d;
+    /* font-weight: bold; */
+    border-bottom: solid;
+    border-bottom-color: #ffffff;
+    padding-bottom: 5px;
+
+}
+
+header #login-button {
+    background: rgba(255, 140, 0, 0.9);
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+#showcase {
+
+    background: url('../img/bg.png') no-repeat center;
+    /* background-image: url('../img/bentley_home.png'); */
+    text-align: center;
+    color: #ffffff;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: relative; */
+    height: 10;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    /* padding-bottom: 40px; */
+
+    /* overlay effect */
+
+}
+
+#showcase h1 {
+    margin-top: 30vh;
+    font-size: 55px;
+    margin-bottom: 10px;
+    border-bottom: #e8491d 3px solid;
+}
+
+
+
+
+
+
+.jumbotron {
+    padding: 40px 0;
+    text-shadow: -1px -1px 1px rgb(8, 8, 8),
+        0px 4px 1px rgba(0, 0, 0, 0.5),
+        4px 4px 5px rgba(0, 0, 0, 0.7),
+        0px 0px 7px rgba(0, 0, 0, 0.4);
+}
+
+#showcase p {
+    font-size: 20px;
+}
+
+
+/* newsletter */
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#newsletter h1 {
+    float: left
+}
+
+#newsletter form {
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+button .button {
+    /* height: 38px; */
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+/* boxes */
+
+#boxes .box {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 10px;
+    margin-top: 10vh;
+    margin-bottom: 15vh;
+
+
+}
+
+#boxes .box img {
+    width: 90px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.89);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10px;
+}
+
+#boxes h2 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+@media(max-width:768px) {
+
+    header a:hover {
+        color: #cccccc;
+        font-weight: bold;
+        border-bottom: solid;
+        border-bottom-color: #e8491d;
+        padding-bottom: 0px;
+
+    }
+
+
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article #main-col {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header {
+        padding-bottom: 10px;
+        position: relative;
+        height: 75px;
+    }
+
+    header li {
+        font-weight: bold;
+        text-shadow: -1px -1px 1px rgb(8, 8, 8)
+    }
+
+    #showcase {
+        min-height: 30em;
+    }
+
+    #showcase h1 {
+        margin-top: 100px;
+        font-size: 35px;
+    }
+
+    #newsletter {
+        padding: 50px;
+        margin: auto;
+    }
+
+    #newsletter button {
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"] {
+        width: 100%;
+        border-radius: 3px;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    header .logo {
+        display: none;
+    }
+
+    header #branding {
+        display: inline;
+    }
+
+}
+
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+ 
+
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  .card{
+    position: relative;
+}
+  .fa-heart-o{
+      margin: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+}
+.fa-heart{
+    margin: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 30px;
+}
+.center {
+    margin: auto;
+    padding: 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  
