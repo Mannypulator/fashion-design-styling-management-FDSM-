@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "name": "Kayode Alabi",
+      "email": "idrisaminu861@gmail.com",
+      "password": "b",
+      "isAdmin": false,
+      "id": 1
+    },
+    {
+      "name": "Branding",
+      "email": "emeritus93@gmail.com",
+      "password": "h",
+      "isAdmin": false,
+      "id": 3
+    },
+    {
+      "name": "Aminu Idris",
+      "email": "web@softaclestudios.com",
+      "password": "ada",
+      "isAdmin": false,
+      "id": 4
+    },
+    {
+      "name": "Max",
+      "email": "bigtayo@gmail.com",
+      "password": "aminu1996",
+      "isAdmin": false,
+      "id": 5
+    },
+    {
+      "name": "Shopefoluwa",
+      "email": "shope@gmail.com",
+      "password": "1234",
+      "isAdmin": false,
+      "id": 6
+    },
+    {
+      "name": "Angela",
+      "email": "ofure@gmail.com",
+      "password": "ofure",
+      "isAdmin": false,
+      "id": 7
+    },
+    {
+      "name": "Admin",
+      "email": "admin@decafash.com",
+      "password": "manny",
+      "isAdmin": true,
+      "id": 8
+    }
+  ],
+  "designs": [
+    {
+      "designName": "Tega",
+      "image": "https://images.unsplash.com/photo-1566398484393-54dfba620f06?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "model": "Isabella",
+      "gender": "Female",
+      "designType": "Shirt",
+      "size": "6'",
+      "color": "Black",
+      "description": "We just digged this out of Rihanna's closet",
+      "date": "2019-10-22T10:34:01.895Z",
+      "poster": "Angela",
+      "isBooked": true,
+      "bookedBy": "Kayode Alabi",
+      "id": 1
+    },
+    {
+      "designName": "Manny",
+      "image": "jlbvJBVLjkbvM",
+      "model": "jkf",
+      "gender": "Male",
+      "designType": "jyjyjyjy",
+      "size": "kykykyk",
+      "color": "lololol",
+      "description": "jyjjyjyjyjy",
+      "date": "2019-10-22T08:53:21.529Z",
+      "poster": "Shopefoluwa",
+      "isBooked": true,
+      "bookedBy": "Angela",
+      "id": 2
+    },
+    {
+      "designName": "Hoodie",
+      "image": "https://images.unsplash.com/photo-1562971065-00834bfd1151?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
+      "model": "Shawn Mendez",
+      "gender": "Male",
+      "designType": "Top",
+      "size": "12'",
+      "color": "Black",
+      "description": "Looking good",
+      "date": "2019-10-22T10:57:13.595Z",
+      "poster": "Angela",
+      "isBooked": true,
+      "bookedBy": "Angela",
+      "id": 3
+    },
+    {
+      "designName": "Manny",
+      "image": "hob",
+      "model": "jkf",
+      "gender": "Others",
+      "designType": "wGH",
+      "size": "Dgh",
+      "color": "red",
+      "description": "ffff",
+      "date": "2019-10-22T15:59:53.015Z",
+      "poster": "Kayode Alabi",
+      "isBooked": false,
+      "bookedBy": "None",
+      "id": 4
+    },
+    {
+      "designName": "Ehisy",
+      "image": "nenenenenenen",
+      "model": "Manny",
+      "gender": "Male",
+      "designType": "Designer Jean",
+      "size": "20'",
+      "color": "Black",
+      "description": "i hope this works",
+      "date": "2019-10-22T16:01:40.869Z",
+      "poster": "Kayode Alabi",
+      "isBooked": false,
+      "bookedBy": "None",
+      "id": 5
+    }
+  ]
+}
