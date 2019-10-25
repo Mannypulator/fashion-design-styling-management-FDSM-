@@ -1,6 +1,6 @@
 $(() => {
     /* signing up a user */
-    authVerification();
+    // authVerification();
     signup();
     login();
     createDesign();
@@ -14,6 +14,7 @@ $(() => {
     loadBookmark();
     editAndDeleteAction();
     logout();
+    loadUsers();
 
     function authVerification(){
         if (localStorage.getItem("username") == null) {
@@ -60,7 +61,7 @@ $(() => {
                             type: "POST",
                             contentType: "application/json",
                             error: (xhr, status, error) => {
-                                alert(error)
+                                alert(error);
                             },
                             success: (result, status, xhr) => {
                                 window.location.href = "index.html";
@@ -82,7 +83,7 @@ $(() => {
             e.preventDefault();
             var email = $("#email").val();
             var password = $("#pwd").val();
-            var data = { name: name, email: email, password: password }
+            var data = { name: name, email: email, password: password, isAdmin:true }
 
             if (email.length < 1 || password.length < 1) {
                 $('.empty-data').show();
@@ -96,8 +97,13 @@ $(() => {
                 success: (result, status, xhr) => {
                     if (result.length > 0) {
                         if (password == result[0].password) {
-                            window.location.href = "home.html";
-                            localStorage.setItem("username", result[0].name);
+                            if(result[0].isAdmin == false ){
+                                window.location.href = "home.html";
+                                localStorage.setItem("username", result[0].name);
+                            } else {
+                                window.location.href = "admin.html";
+                                localStorage.setItem("username", result[0].name);
+                            }                            
                         } else {
                             $('.wrong-password').show();
 
@@ -479,10 +485,47 @@ $(() => {
 
     }
 
-    function AdminLogin(){
-        
+    function loadUsers() {
+        /* Getting all users */
+        // let poster = localStorage.getItem("username");
+        $.ajax({
+            url: "http://localhost:3000/users",
+            type: "GET",
+            contentType: "application/json",
+            success: (result, status, xhr) => {
+                // console.log(result);
+                let output = "";
+                var div = $(".users");
+                for (i in result) {
+                    if(result[i].isAdmin == false){
+                        output += `<div class="col-md-6" id ="`+result[i].id+`">
+                        <a href = "#"><h4 class = "admin-press">`+result[i].name+`</h4></a>
+                    </div>`;
+                    }
+                 
+
+                }
+                div.append(output);
+
+            }
+
+        });
     }
 
+    // function clickUser(){
+    //     $('.admin-press').on('click',(e)=>{
+    //         e.preventDefault();
+    //         localStorage.setItem("user","poster");
+    //         window.location.href = "user-designs.html";
+    //     })
+    // }
+    // function userDesign(){
+    //     if (){
+
+
+    //     }
+
+    // }
 
 
 
